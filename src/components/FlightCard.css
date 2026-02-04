@@ -1,0 +1,214 @@
+.flightBox {
+  width: 600px;
+  height: 150px;
+  background: #fbfeff;
+  border: 1px solid #d6e2ef;
+  border-radius: 12px;
+  font-family: Inter, Arial, sans-serif;
+  color: #1f2d3d;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
+  margin: 10px;
+}
+
+.flightBox:hover {
+  background: #edf6ff;
+}
+
+.topPart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.airlineInfo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.logoWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.airLogo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.airName {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.1;
+}
+
+.flightCode {
+  font-size: 11px;
+  color: #6b7c93;
+}
+
+.timeSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.timeCol {
+  text-align: center;
+}
+
+.mainTime {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.place {
+  font-size: 11px;
+  color: #6b7c93;
+}
+
+.midInfo {
+  text-align: center;
+  position: relative;
+  min-width: 160px;
+}
+
+.durationLine {
+  font-size: 11px;
+  color: #6b7c93;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.routeLine {
+  position: relative;
+  height: 1px;
+  width: 150px;
+  background: #9bb2c8;
+  margin: 0 auto 4px;
+}
+
+.routeLine::before,
+.routeLine::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  background: #9bb2c8;
+  border-radius: 50%;
+}
+
+.routeLine::before {
+  left: 0;
+}
+
+.routeLine::after {
+  right: 0;
+}
+
+.stopText {
+  font-size: 10px;
+  color: #c4161c;
+  line-height: 1.2;
+}
+
+.nearAirport {
+  font-size: 10px;
+  color: #2b6cb0;
+  margin-top: 2px;
+}
+
+.lineBreak {
+  height: 1px;
+  background: #9c9c9e;
+  margin: 0 10px;
+}
+
+.priceSection {
+  display: flex;
+  gap: 18px;
+  padding: 6px 14px;
+  align-items: center;
+}
+
+.priceTag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.priceTag input {
+  width: 14px;
+  height: 14px;
+}
+
+.priceText {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tagLabel {
+  padding: 2px 7px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.yellowTag {
+  background: #ffb703;
+  color: #1f2d3d;
+}
+
+.blueTag {
+  background: #d7e9f7;
+  color: #1f2d3d;
+}
+
+.extraInfo {
+  display: flex;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: #334e68;
+  align-items: center;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 8px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.infoItem:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 14px;
+  width: 1px;
+  background: #9c9c9e;
+}
+
+.smallIcon {
+  width: 14px;
+  height: 14px;
+  color: #6b7c93;
+}
