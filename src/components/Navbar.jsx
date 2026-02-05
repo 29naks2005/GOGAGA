@@ -1,4 +1,4 @@
-import "./navbar.css";
+import "./Navbar.css";
 import { Menu, LayoutGrid, Filter, Bell, Mail } from "lucide-react";
 
 export default function Navbar() {
