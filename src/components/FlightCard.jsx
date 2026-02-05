@@ -3,6 +3,7 @@ import { Clock, Briefcase, Luggage, RefreshCcw, FileText } from "lucide-react";
 
 export default function FlightCard({ flight }) {
   return (
+    
       <div className="flightBox">
         <div className="topPart">
           <div className="airlineInfo">
