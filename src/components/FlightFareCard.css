@@ -77,31 +77,29 @@
 
 .fareBlueBox {
     width: 100%;
-    min-height: 120px;
-    height: auto;
-    background: linear-gradient(90deg, #0b1118, #16305f, #2a4db0);
+    height: 120px;
+    background: linear-gradient(90deg, #0a0f1a 0%, #1c2f60 55%, #2f58c8 100%);
     display: flex;
-    flex-wrap: wrap;
-    /* Allow wrapping on smaller screens */
     align-items: center;
     justify-content: space-between;
-    padding: 20px 24px;
+    padding: 16px 22px;
     box-sizing: border-box;
     color: white;
-    gap: 20px;
+    border-radius: 12px;
 }
 
 .fareSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-width: 220px;
 }
 
 .fareTitle {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
-    opacity: 0.8;
+    opacity: 0.85;
     margin-bottom: 6px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
 }
 
 .fareTimeRow {
@@ -111,12 +109,12 @@
 }
 
 .fareTime {
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 800;
 }
 
 .fareArrow {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     opacity: 0.7;
     position: relative;
@@ -124,30 +122,32 @@
 }
 
 .farePrice {
-    font-size: 24px;
-    font-weight: 700;
-    margin-right: 20px;
+    font-size: 26px;
+    font-weight: 800;
+    min-width: 180px;
+    text-align: left;
 }
 
 .fareDivider {
     width: 1px;
     height: 70px;
-    background: rgba(255, 255, 255, 0.2);
-    margin: 0 20px;
+    background: rgba(255, 255, 255, 0.22);
+    margin: 0 14px;
 }
 
 .fareTotalBox {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: center;
-    gap: 4px;
+    align-items: flex-end;
+    min-width: 250px;
 }
 
 .farePassengerText {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
-    opacity: 0.8;
+    opacity: 0.85;
+    margin-bottom: 6px;
 }
 
 .fareTotalRow {
@@ -157,14 +157,14 @@
 }
 
 .fareTotalLabel {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     opacity: 0.9;
 }
 
 .fareTotalPrice {
-    font-size: 28px;
-    font-weight: 800;
+    font-size: 30px;
+    font-weight: 900;
 }
 
 .fareBottomRow {
