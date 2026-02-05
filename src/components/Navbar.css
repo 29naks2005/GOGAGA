@@ -1,0 +1,147 @@
+.navbar-main {
+    height: 62px;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    border-bottom: 1px solid #e6e6e6;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.06);
+    font-family: Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.navbar-logo {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+}
+
+.logo-go {
+    color: #2bb673;
+}
+
+.logo-gaga {
+    color: #98bf11;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #444;
+}
+
+/* CENTER */
+.navbar-center {
+    flex: 1;
+}
+
+/* RIGHT SIDE */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-right: 20px;
+    border-right: 1px solid #e6e6e6;
+}
+
+.navbar-icon-box {
+    width: 38px;
+    height: 38px;
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    background: white;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.navbar-badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 10px;
+    color: white;
+}
+
+.green-badge {
+    background: #2bb673;
+}
+
+.blue-badge {
+    background: #4f6cff;
+}
+
+.red-badge {
+    background: #ff4d4d;
+}
+
+.icon1 {
+    color: #2bb673;
+    border: 1px solid #2bb673;
+}
+
+.icon2 {
+    color: #4f6cff;
+    border: 1px solid #4f6cff;
+}
+
+.icon3 {
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+}
+
+.navbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.navbar-profile-img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.navbar-profile-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar-down-arrow {
+    font-size: 10px;
+    color: #666;
+}
