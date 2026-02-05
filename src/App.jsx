@@ -1,5 +1,3 @@
-import React from 'react'
-import FlightCard from './components/FlightCard.jsx'
 import { flightsData } from './utlis/flightData.jsx'
 import './App.css'
 import Sidebar from './components/Sidebar.jsx'
