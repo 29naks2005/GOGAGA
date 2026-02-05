@@ -3,19 +3,24 @@ import FlightCard from './components/FlightCard.jsx'
 import { flightsData } from './utlis/flightData.jsx'
 import './App.css'
 import Sidebar from './components/Sidebar.jsx'
+import HolidaySearchBar from './components/Searchbar.jsx'
+import FlightFareCard from './components/FlightFareCard.jsx'
+import FlightColumn from './components/FlightColumn.jsx'
 
 const App = () => {
   return (
-    <div className="app">
-      <Sidebar />
-      <div className="flights-container">
-      {flightsData.map((flight) => (
-        <FlightCard key={flight.id} flight={flight} />
-      ))}
-    </div>
-  
-    
-    </div>
+    <>
+      <div className="app">
+        <Sidebar />
+        <div className="flights-container">
+          <HolidaySearchBar />
+          <FlightFareCard />
+          <div className="flights">
+              <FlightColumn flights={flightsData} />
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 

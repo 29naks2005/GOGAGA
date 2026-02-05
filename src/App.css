@@ -1,8 +1,15 @@
-.flights-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  justify-content: center;
-}
-.app{
+.app {
   display: flex;
+}
+
+.flights-container {
+  margin-left: 260px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: calc(100% - 250px);
+}
+
+.flights {
+  width: 100%;
 }
