@@ -1,12 +1,13 @@
 .flightBox {
   width: 100%;
-  height: 150px;
+  min-height: 150px;
+  height: auto;
   background: #fbfeff;
   border: 1px solid #d6e2ef;
   border-radius: 12px;
   font-family: Inter, Arial, sans-serif;
   color: #1f2d3d;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
@@ -94,7 +95,8 @@
 .routeLine {
   position: relative;
   height: 1px;
-  width: 150px;
+  width: 100%;
+  max-width: 150px;
   background: #9bb2c8;
   margin: 0 auto 4px;
 }
@@ -207,7 +209,56 @@
 }
 
 .smallIcon {
-  width: 14px;
   height: 14px;
   color: #6b7c93;
+}
+
+@media (max-width: 600px) {
+  .flightBox {
+    height: auto;
+  }
+
+  .topPart {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .airlineInfo {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+  }
+
+  .timeSection {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .midInfo {
+    margin: 10px auto;
+  }
+
+  .routeLine {
+    width: 100px;
+  }
+
+  .priceSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-top: 1px dashed #ddd;
+  }
+
+  .extraInfo {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .infoItem:not(:last-child)::after {
+    display: none;
+  }
 }

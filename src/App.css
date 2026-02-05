@@ -1,15 +1,23 @@
 .app {
   display: flex;
+  padding-top: 62px;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .flights-container {
-  margin-left: 260px;
-  margin-right: 10px;
-  margin-top: 80px;
-  margin-bottom: 10px;
-  width: calc(100% - 250px);
+  flex: 1;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .flights {
   width: 100%;
+}
+
+@media (max-width: 900px) {
+  .flights-container {
+    padding: 10px;
+  }
 }

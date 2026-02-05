@@ -145,3 +145,29 @@
     font-size: 10px;
     color: #666;
 }
+
+@media (max-width: 900px) {
+    .navbar-center {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-profile-name {
+        display: none;
+    }
+
+    .navbar-icons {
+        gap: 8px;
+        padding-right: 10px;
+    }
+
+    .navbar-logo {
+        font-size: 20px;
+    }
+
+    .logo-go,
+    .logo-gaga {
+        font-size: 20px;
+    }
+}

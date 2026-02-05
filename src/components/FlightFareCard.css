@@ -77,14 +77,18 @@
 
 .fareBlueBox {
     width: 100%;
-    height: 120px;
+    min-height: 120px;
+    height: auto;
     background: linear-gradient(90deg, #0b1118, #16305f, #2a4db0);
     display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
     align-items: center;
     justify-content: space-between;
-    padding: 0 24px;
+    padding: 20px 24px;
     box-sizing: border-box;
     color: white;
+    gap: 20px;
 }
 
 .fareSection {
@@ -191,4 +195,43 @@
 
 .fareBottomDivider {
     flex: 1;
+}
+
+@media (max-width: 900px) {
+    .fareTopInputs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .fareSmallBox {
+        max-width: 100%;
+    }
+
+    .fareBlueBox {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .fareDivider {
+        width: 100%;
+        height: 1px;
+        margin: 10px 0;
+    }
+
+    .fareTotalBox {
+        align-items: center;
+    }
+
+    .fareBottomRow {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .fareBottomDivider {
+        display: none;
+    }
 }

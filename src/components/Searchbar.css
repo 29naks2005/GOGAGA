@@ -1,13 +1,14 @@
 .holidayBox {
     width: 100%;
-    height: 250px;
+    min-height: 250px;
+    height: auto;
     background: #fff;
     padding: 18px 26px;
     font-family: "Inter", sans-serif;
     border-radius: 16px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .holidayTabs {
@@ -174,7 +175,6 @@
     margin-left: -8px;
 }
 
-/* RESTORED MISSING STYLES */
 .hotelText {
     font-size: 13px;
     font-weight: 600;
@@ -219,4 +219,45 @@
     height: 16px;
     cursor: pointer;
     accent-color: black;
+}
+
+@media (max-width: 900px) {
+    .holidayBox {
+        height: auto;
+    }
+
+    .inputRow {
+        flex-direction: column;
+        gap: 12px;
+        height: auto;
+    }
+
+    .fieldBox {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .wideField,
+    .smallField,
+    .mediumField {
+        flex: none;
+        width: 100%;
+    }
+
+    .searchBtn {
+        width: 100%;
+        height: 48px;
+    }
+
+    .optionsRow {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .mealRow {
+        margin-left: 0;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
 }
