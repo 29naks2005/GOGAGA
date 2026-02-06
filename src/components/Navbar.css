@@ -29,11 +29,11 @@
 }
 
 .logo-go {
-    color: #2bb673;
+    color: #149a59;
 }
 
 .logo-gaga {
-    color: #98bf11;
+    color: #9cc214;
 }
 
 .navbar-menu {
@@ -44,12 +44,10 @@
     color: #444;
 }
 
-/* CENTER */
 .navbar-center {
     flex: 1;
 }
 
-/* RIGHT SIDE */
 .navbar-right {
     display: flex;
     align-items: center;

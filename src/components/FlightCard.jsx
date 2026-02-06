@@ -33,7 +33,7 @@ export default function FlightCard({ flight }) {
                 {flight.duration}
               </div>
 
-              <div className="routeLine" />
+              <div className="routeLine"></div>
 
               <div className="stopText">{flight.stopsInfo}</div>
 

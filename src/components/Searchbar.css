@@ -87,6 +87,7 @@
     font-size: 11px;
     text-transform: uppercase;
     color: #888;
+    margin: 0;
     margin-bottom: 3px;
     letter-spacing: 0.5px;
 }
@@ -95,6 +96,7 @@
     font-size: 14px;
     font-weight: 500;
     color: #111;
+    margin: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

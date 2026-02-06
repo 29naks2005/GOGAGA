@@ -1,10 +1,10 @@
-import { flightsData } from './utlis/FlightData.jsx'
+import { flightsData } from './utils/FlightData.jsx'
 import './App.css'
 import Sidebar from './components/Sidebar.jsx'
 import HolidaySearchBar from './components/Searchbar.jsx'
 import FlightFareCard from './components/FlightFareCard.jsx'
 import FlightColumn from './components/FlightColumn.jsx'
-import Navbar from './components/Navbar.jsx'
+import Navbar from './components/navbar.jsx'
 
 
 const App = () => {
