@@ -4,7 +4,7 @@ import Sidebar from './components/Sidebar.jsx'
 import HolidaySearchBar from './components/Searchbar.jsx'
 import FlightFareCard from './components/FlightFareCard.jsx'
 import FlightColumn from './components/FlightColumn.jsx'
-import Navbar from './components/navbar.jsx'
+import Navbar from './components/Navbar.jsx'
 
 
 const App = () => {
